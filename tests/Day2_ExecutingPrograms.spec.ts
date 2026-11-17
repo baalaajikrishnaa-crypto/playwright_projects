@@ -4,9 +4,9 @@ test('launching chromium binary', async ()=>{
 
     console.log('this is first program')
 
-    let browser = await webkit.launch({
-        headless:false
-        //channel:'firefox'
+    let browser = await chromium.launch({
+        headless:false,
+        channel:'msedge'
     })
 /*
 browser context - sessions
